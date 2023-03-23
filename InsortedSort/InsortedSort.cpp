@@ -73,6 +73,7 @@ void display() {
 int main() {
     input();
     insertsort();
+    display();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
