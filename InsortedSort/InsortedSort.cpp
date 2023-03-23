@@ -7,14 +7,14 @@ using namespace std;
 int arr[20];
 int n;
 
-void input() {  //prosedur input
+void input() {                                              //prosedur input
     while (true)
     {
         cout << "Masukkan Jumlah Data Pada Array : ";       //input jumlah elemen
-        cin >> n;   //memanggil inputan n
+        cin >> n;                                           //memanggil inputan n
 
         if (n <= 20)
-        {   //kondisi n tidak lebih dari 20
+        {                                                   //kondisi n tidak lebih dari 20
             break;
         }
         else
@@ -32,26 +32,28 @@ void input() {  //prosedur input
     }
 }
 
+//prosedur insertionsort
 void insertsort() {
-    int temp;
-    int j;
+    int temp;           //variabel data temporer
+    int j;              //variabel j sebagai penanda
 
-    for (int i = 1; i < n; i++) {                   
-        temp = arr[i];                              
+    for (int i = 1; i < n; i++) {                   //1. lopping dengan i dimulai 1 hingga n-1
+        temp = arr[i];                              //2. simpan nilai arr[i] ke variabel sementara temp
 
-        j = i - 1;
+        j = i - 1;                                  //3. setting nilai j sama dengan i-1
 
-        while (j >= 0 && arr[j] > temp) {
-            arr[j + 1] - arr[j];
-            j--;
+        while (j >= 0 && arr[j] > temp) {           //4. looping while dimana nilai j lebih besar sama dengan 0 dan array[j] lebih besar dari dari temp
+            arr[j + 1] - arr[j];                    //simpan arr[j] kedalam  variabel arr[j+1]
+            j--;                                    // j decrement
         }
 
-        arr[j + 1] = temp;
+        arr[j + 1] = temp;                          //5. simpan nilai temp ke dalam arr[j+1]
 
         cout << endl;
-        cout << "\nPass " << i << ": ";
-        for (int k = 0; k < n; k++) {
-            cout << arr[i] << " ";
+        cout << "\nPass " << i << ": ";             //output ke layar
+        for (int k = 0; k < n; k++) 
+        {                                           //looping nilai k dimulai dari 0 hingga n-1
+            cout << arr[i] << " ";                  //display output
         }
     }
 }
