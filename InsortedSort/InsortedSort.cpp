@@ -36,8 +36,8 @@ void insertsort() {
     int temp;
     int j;
 
-    for (int i = 1; i < n; i++) {
-        temp = arr[i];
+    for (int i = 1; i < n; i++) {                   
+        temp = arr[i];                              
 
         j = i - 1;
 
@@ -64,9 +64,10 @@ void display() {
     cout << "\n=======================" << endl;
 
     for (int j = 0; j < n; j++) {
-        cout << arr[j] << endl;
+        //looping dengan j dimulai dari 0 hingga n-1
+        cout << arr[j] << endl; // output ke layat
     }
-    cout << endl;
+    cout << endl; // output baris kosong
 }
 
 
