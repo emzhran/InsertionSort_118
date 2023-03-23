@@ -7,27 +7,27 @@ using namespace std;
 int arr[20];
 int n;
 
-void input() {
+void input() {  //prosedur input
     while (true)
     {
-        cout << "Masukkan Jumlah Data Pada Array : ";
-        cin >> n;
+        cout << "Masukkan Jumlah Data Pada Array : ";       //input jumlah elemen
+        cin >> n;   //memanggil inputan n
 
         if (n <= 20)
-        {
+        {   //kondisi n tidak lebih dari 20
             break;
         }
         else
         {
-            cout << "\nArray yang anda masukkan maksimal 20 element.\n";
+            cout << "\nArray yang anda masukkan maksimal 20 element.\n";    //menampilkan pesan berlebih
         }
     }
-    cout << endl;
-    cout << "======================" << endl;
-    cout << "Masukkan Element Array" << endl;
-    cout << "======================" << endl;
+    cout << endl;       //membuat jarak
+    cout << "======================" << endl;       //tampilan
+    cout << "Masukkan Element Array" << endl;       //tampilan
+    cout << "======================" << endl;       //tampilan
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {                   //menggunakan perulangan untuk menampilkan
         cout << "Data ke-" << (i + 1) << ": ";
     }
 }
