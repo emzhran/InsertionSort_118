@@ -56,6 +56,14 @@ void insertsort() {
     }
 }
 
+void display() {
+    cout << endl;
+    cout << "Total Element Movement" << endl;
+    cout << "\n=======================" << endl;
+    cout << "Element Array yang telah tersusun" << endl;
+    cout << "\n=======================" << endl;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
